@@ -29,18 +29,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
-.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
-    min-width: 400px;
-}
-.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
-    height: 410px;
-    width: 550px;
-}
-.css-1rcvvn7-MuiInputBase-root-MuiInput-root:before,
-.css-1rcvvn7-MuiInputBase-root-MuiInput-root:after   {
-    border-bottom: none !important;
-}
-.css-2m9kme-MuiFormControl-root {
+.select-dropdown {
     width: 485px !important;
 }
 .note_section {

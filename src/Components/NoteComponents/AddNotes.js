@@ -85,7 +85,13 @@ export default function FormDialog({ textHandler, saveHandler, cancelHandler, in
           Add Notes
         </Button>
       </div>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose}
+        PaperProps={{
+          sx: {
+            width: "550px",
+            maxHeight: 410
+          }
+        }}>
         <DialogTitle className='dialog-title'>Add a Note</DialogTitle>
         <DialogContent>
             <TextField
@@ -100,8 +106,12 @@ export default function FormDialog({ textHandler, saveHandler, cancelHandler, in
                 variant="standard"
                 value={inputText}
                 onChange={textHandler}
+                InputProps={{
+                  disableUnderline: true,
+                }}
             />
-            <FormControl sx={{ m: 1, width: 300 }}>
+            <FormControl className="select-dropdown"
+                sx={{ m: 1, width: 300 }}>
                 <InputLabel id="demo-multiple-checkbox-label">Select Tag</InputLabel>
                 <Select
                 labelId="demo-multiple-checkbox-label"

@@ -71,10 +71,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.css-w66kx-MuiChip-root {
-    background-color: white !important;
-    font-weight: bold;
-}
 .add_btn_wrapper{ 
     display: flex;
     flex-direction: column;
@@ -90,4 +86,6 @@
 }
 .chips {
     margin-right: 1rem;
+    background-color: white !important;
+    font-weight: bold;
 }
