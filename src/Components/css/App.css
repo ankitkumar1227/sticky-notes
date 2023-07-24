@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat";
+}
+.main {
+    max-width: 80%;
+    margin: 0px auto;
+    padding: 0px 15px;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+.notes__title {
+    color: black;
+    font-size: 38px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.notes {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    min-width: 400px;
+}
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    height: 410px;
+    width: 550px;
+}
+.css-1rcvvn7-MuiInputBase-root-MuiInput-root:before,
+.css-1rcvvn7-MuiInputBase-root-MuiInput-root:after   {
+    border-bottom: none !important;
+}
+.css-2m9kme-MuiFormControl-root {
+    width: 485px !important;
+}
+.note_section {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    margin-top: 1rem;
+}
+.add_note {
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+    .notes {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+@media screen and (max-width: 500px) {
+    .notes {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}

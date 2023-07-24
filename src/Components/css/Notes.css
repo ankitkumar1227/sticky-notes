@@ -1,0 +1,93 @@
+.note {
+    color: black;
+    min-height: 325px;
+    word-wrap: break-word;
+    background: url(../img/notelanding.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.note__footer {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 12%;
+}
+.note textarea {
+    white-space: pre-wrap;
+    background: transparent;
+    border: none;
+    color: black;
+    resize: none;
+    font-size: 18px;
+}
+.note textarea:focus {
+    outline: none;
+}
+.note textarea::placeholder {
+    color: black;
+}
+.note__save {
+    background: transparent;
+    transition: 0.1s ease-in-out;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    color: black;
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.note__save:hover {
+    background: lightgreen;
+    border: 1.5px solid black;
+    color: #4b1589;
+}
+.note__delete {
+    cursor: pointer;
+}
+.note__delete:hover {
+    transform: scale(1.1);
+}
+.char__progress {
+    background-color: black !important;
+}
+.note__body {
+    margin-left: 17%;
+    margin-top: 18%;
+    font-weight: bold;
+    width: 70%;
+    height: 150px;
+    font-size: 14px;
+    overflow-y: scroll;
+}
+.note__body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.hidden {
+    display: none;
+}
+.no-notes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.css-w66kx-MuiChip-root {
+    background-color: white !important;
+    font-weight: bold;
+}
+.add_btn_wrapper{ 
+    display: flex;
+    flex-direction: column;
+}
+.add_btn_wrapper button {
+    margin-top: 2rem;
+}
+.dialog-title {
+    border-bottom: 1px solid rgb(213 196 196);
+}
+.note__footer_section {
+    width: 100%;
+}
+.chips {
+    margin-right: 1rem;
+}
